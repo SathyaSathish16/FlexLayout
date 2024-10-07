@@ -1,0 +1,79 @@
+.container{
+    background-color: snow;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    height:200px;
+}
+.item{
+    width:40px;
+    height:40px;
+    border-radius: 4px;
+    box-shadow: 2px 4px 4px rgba(0,0,0,0.25);
+    background-color: tomato;
+    align-items: center;
+}
+.lg{
+    width:80px;
+}
+.task1 .container{
+    display: flex;
+}
+.task2 .container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.task3 .container{
+    display: flex;
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    justify-content: space-evenly;
+}
+.task4 .option-1 .container{
+    display:flex;
+    justify-content: space-between;
+}
+.task4 .option-2 .container{
+    display: flex;
+}
+/* This creates/grows space between the items */
+.task4 .option-2 .space{
+    flex-grow: 1;
+}
+.task4 .option-3 .container{
+    display:flex;
+}
+/* It extends/grows the items itself */
+/* this is used when there is input and icon and input field like search field is larger */
+.task4 .option-3 .item:first-child{
+    flex-grow: 1;
+}
+.task5 .container{
+    display:flex;
+}
+.task5 .item-1{
+    flex-grow: 3;
+}
+.task5 .item-2{
+    flex-grow: 1;
+}
+.task5 .item-3{
+    flex-grow: 1;
+}
+.task5 .item-4{
+    flex-grow: 1;
+}
+.task6 .container{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.task6 .item{
+    flex-basis: 50%;   
+}
+@media  (min-width:375px){
+.task6 .item{
+    display:flex;
+    flex-basis:25%;
+}
+}
